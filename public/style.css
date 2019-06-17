@@ -1,0 +1,76 @@
+* {
+  margin: 0,
+  padding: 0
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  font-family: 'Swanky and Moo Moo', cursive;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0;
+}
+
+#app {
+  width: 40vw;
+  background-color: #FFFF88;
+  box-shadow: 2px 2px 4px grey;
+}
+
+#todoForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+#todoForm>* {
+  margin: 1vw;
+}
+
+#todoInput {
+  width: 100%;
+  background-color: #FFFF88;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+
+input, #add-button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#add-button {
+  background-color: #FFFF88;
+  border: 2px solid black;
+  padding: 0 2vw;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#add-button:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s
+}
+
+#add-button:active {
+  transform: scale(1, 1);
+  transition: 0.1s
+}
+
+.high {
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 2vw;
+}

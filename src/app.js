@@ -6,24 +6,24 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       todos:
       [
-        { task: 'washing up', priority: 'high' },
-        { task: 'laundry', priority: 'low' },
-        { task: 'walk the dog', priority: 'low' },
-        { task: 'homework', priority: 'low' }
+        { task: 'Washing up', priority: 'high' },
+        { task: 'Laundry', priority: 'low' },
+        { task: 'Walk the dog', priority: 'low' },
+        { task: 'Homework', priority: 'low' }
       ],
       newTodo: "",
       priority: "high"
     },
     methods: {
       saveNewToDo: function() {
-        console.dir(this.priority);
-        console.log(this.newTodo);
-        this.todos.push({
-          task: this.newTodo,
-          priority: this.priority
-        });
-        this.newTodo = "";
-        this.priority = "high";
+        if (this.newTodo !== "") {
+          this.todos.unshift({
+            task: this.newTodo,
+            priority: this.priority
+          });
+          this.newTodo = "";
+          this.priority = "high";
+        }
       }
     }
   })

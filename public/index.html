@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="js/bundle.js"></script>
+  <title>To Do List</title>
+</head>
+<body>
+
+  <div id="app">
+    <input v-model="newTodo" type="text" id="todoInput" required/>
+
+    <input v-model="priority" name="priority" value="high" type="radio" id="high"/>
+    <label for="high">High</label>
+
+    <input v-model="priority" name="priority" value="low" type="radio" id="low">
+    <label for="low">Low</label>
+
+    <button v-on:click="saveNewToDo" type="button">Add</button>
+    <ul>
+      <li v-for="todo in todos">{{ todo.task }}</li>
+    </ul>
+  </div>
+
+</body>
+</html>

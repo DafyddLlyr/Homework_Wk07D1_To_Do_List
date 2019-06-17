@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     methods: {
       saveNewToDo: function() {
         if (this.newTodo !== "") {
-          this.todos.unshift({
+          this.todos.push({
             task: this.newTodo,
             priority: this.priority
           });

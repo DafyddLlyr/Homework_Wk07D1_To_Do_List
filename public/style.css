@@ -21,6 +21,7 @@ h1 {
   width: 40vw;
   background-color: #FFFF88;
   box-shadow: 2px 2px 4px grey;
+  margin-top: 2vw;
 }
 
 #todoForm {
